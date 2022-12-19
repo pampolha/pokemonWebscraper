@@ -1,0 +1,16 @@
+{
+  "name": "pokemon-webscraping-lambda",
+  "version": "1.0.0",
+  "description": "Webscraping de pokemon no ambiente AWS Lambda",
+  "main": "index.js",
+  "scripts": {
+    "zip": "7z a -tzip -y deployment-package.zip *",
+    "sendToLambda": "npm run zip && aws s3 cp deployment-package.zip s3://pokemon-webscraper-bucket && aws lambda update-function-code --function-name pokemonWebscraper --s3-bucket pokemon-webscraper-bucket --s3-key deployment-package.zip && del deployment-package.zip"
+  },
+  "author": "gabriel pampolha | contato.gabrielpampolha@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "puppeteer-core": "10.1.0"
+  }
+}

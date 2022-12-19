@@ -1,0 +1,14 @@
+{
+  "name": "pokemon-webscraping",
+  "version": "1.0.0",
+  "description": "Webscraping de pokemon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gabriel pampolha | contato.gabrielpampolha@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^19.4.0"
+  }
+}

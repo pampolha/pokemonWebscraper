@@ -3,9 +3,12 @@
 Um webscraper que resgata informações básicas de um Pokémon na <a href="https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex_Nacional">Pok&eacute;dex Nacional</a>
 através de seu nome.
 
-### Pré-requisito
+## Pré-requisitos
 
 * <a href="https://nodejs.org/en/">Node.js</a> 14
+
+Versão Lambda
+* <a href="https://aws.amazon.com/pt/cli/">AWS CLI<a/>
 
 ## Construído com
 

@@ -34,3 +34,7 @@ Instruções específicas estarão presentes no arquivo .README dentro da pasta 
 * Após clonar ou baixar o repositório e executar o arquivo conforme as instruções na <a href="https://github.com/pampolha/pokemonWebscraper/tree/main/client">pasta client</a>, o resultado deve ser parecido com este:
 
 ![image](https://user-images.githubusercontent.com/79263044/209584074-7040b8ea-416b-41e9-8064-14421eb3a28b.png)
+
+* Você também pode executar o programa já passando o nome do Pokemón como um argumento, evitando ter que digitar o nome dele posteriormente. Exemplo:
+
+![image](https://user-images.githubusercontent.com/79263044/209586130-935021d9-e010-4bd1-a934-28cbf331d7bb.png)

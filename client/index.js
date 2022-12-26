@@ -132,10 +132,8 @@ function cleanupPokemon(pokemon) {
     };
     return displayPokemon;
 }
-// input.question ira fazer o pedido de entrada pro usuario, e ler o proximo input (tecla enter)
-input.question('\nInsira o nome do pokémon a ser pesquisado:', async pokemonName => {
-    // Encerra a entrada de dados
-    input.close();
+// Funcao final que pesquisa o pokemon pelo nome e retorna os dados limpos atraves de outras funcoes
+async function searchPokemon(pokemonName) {
     // Chama a funcao scrapePokemon com o nome inserido pelo usuario, e entao retorna o log do objeto pokemon limpo pela funcao cleanupPokemon
     console.log('\nO pokémon está sendo pesquisado, aguarde...\n');
     try {
@@ -147,4 +145,19 @@ input.question('\nInsira o nome do pokémon a ser pesquisado:', async pokemonNam
         // Se ocorrer um erro, ele sera escrito no arquivo de dump
         fs.writeFileSync(res.dumpFilePath, err.cause + '\r' + err.stack + '\r');
     }
-});
+}
+// Argumento passado ao executar o arquivo, ex: node index.js Pikachu
+const argument = process.argv[2];
+// Caso haja um argumento, o programa não receberá entrada de nome e irá buscar e retornar os dados do pokemon citado no argumento
+if (argument) {
+    return searchPokemon(argument);
+}
+else {
+    // input.question ira fazer o pedido de entrada pro usuario, e ler o proximo input (tecla enter)
+    input.question('\nInsira o nome do pokémon a ser pesquisado:', async pokemonName => {
+        // Encerra a entrada de dados
+        input.close();
+        // Chama a funcao final que procura o pokemon
+        return searchPokemon(pokemonName);
+    });
+}

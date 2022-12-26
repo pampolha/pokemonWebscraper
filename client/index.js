@@ -150,7 +150,8 @@ async function searchPokemon(pokemonName) {
 const argument = process.argv[2];
 // Caso haja um argumento, o programa não receberá entrada de nome e irá buscar e retornar os dados do pokemon citado no argumento
 if (argument) {
-    return searchPokemon(argument);
+    // Executa a função e termina o programa para evitar um aguardo do node
+    searchPokemon(argument).then(() => process.exit(0));
 }
 else {
     // input.question ira fazer o pedido de entrada pro usuario, e ler o proximo input (tecla enter)

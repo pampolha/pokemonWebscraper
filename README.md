@@ -23,18 +23,16 @@ Versão Lambda
 * [<a href="https://www.npmjs.com/package/puppeteer-core">puppeteer-core</a>] - Biblioteca que possui os módulos principais do Puppeteer, porém sem o navegador embutidos, logo é um pacote muito mais leve e possível de portar para AWS.
 * [<a href="https://github.com/alixaxel/chrome-aws-lambda">chrome-aws-lambda</a>] - Navegador chromium específico para uso em ambientes cloud.
 
-## Como usar <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Pikachu-Pok%C3%A9mon-PNG-983x1024.png" alt="Pikachu apontando com a cauda" width="50px" height="50px" align="right">
-
-Apenas inserir o nome do Pokémon. 
-Não há sensibilidade de capitalização necessária, porém o nome deve possuir ortografia correta.
-Instruções específicas estarão presentes no arquivo .README dentro da pasta de cada versão.
+## Como usar a versão client <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Pikachu-Pok%C3%A9mon-PNG-983x1024.png" alt="Pikachu apontando com a cauda" width="50px" height="50px" align="right">
+* Primeiro, baixe o repositório seguindo a sequência de acções:
+* Clique no botão verde: ![image](https://user-images.githubusercontent.com/79263044/209598088-bd3fe68e-bf19-46d0-9552-ade96140a2fb.png)
+* Clique na última opção da aba que irá se abrir: ![image](https://user-images.githubusercontent.com/79263044/209598433-364d4390-704c-43e9-8b83-450ab351f9b2.png)
+* Extraia o arquivo zip baixado
+* Entre na pasta client e abra um terminal nela
+* Siga as instruções especificadas no <a href="https://github.com/pampolha/pokemonWebscraper/blob/main/client/README.md">.README da pasta</a>
 
 ## Exemplo da versão client <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Pikachu-Pok%C3%A9mon-PNG-983x1024.png" alt="Pikachu apontando com a cauda" width="50px" height="50px" align="right">
 
-* Após clonar ou baixar o repositório e executar o arquivo conforme as instruções na <a href="https://github.com/pampolha/pokemonWebscraper/tree/main/client">pasta client</a>, o resultado deve ser parecido com este:
+* Após clonar ou baixar o repositório e executar o arquivo conforme as instruções na <a href="https://github.com/pampolha/pokemonWebscraper/tree/main/client">pasta client</a>, o resultado deve ser parecido com este: ![image](https://user-images.githubusercontent.com/79263044/209584074-7040b8ea-416b-41e9-8064-14421eb3a28b.png)
 
-![image](https://user-images.githubusercontent.com/79263044/209584074-7040b8ea-416b-41e9-8064-14421eb3a28b.png)
-
-* Você também pode executar o programa já passando o nome do Pokemón como um argumento, evitando ter que digitar o nome dele posteriormente. Exemplo:
-
-![image](https://user-images.githubusercontent.com/79263044/209586130-935021d9-e010-4bd1-a934-28cbf331d7bb.png)
+* Você também pode executar o programa já passando o nome do Pokemón como um argumento para agilizar o processo. Exemplo: ![image](https://user-images.githubusercontent.com/79263044/209586130-935021d9-e010-4bd1-a934-28cbf331d7bb.png)
